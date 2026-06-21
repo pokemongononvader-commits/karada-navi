@@ -106,7 +106,83 @@ return ( <main className="min-h-screen bg-green-50">
     >
       ← FAQ一覧へ戻る
     </Link>
+<section className="bg-white rounded-3xl shadow-lg p-6 mb-8">
 
+  <h2 className="text-2xl font-bold text-green-800 mb-4">
+    🧊 ケガをしたばかりの基本対応「POLICE」
+  </h2>
+
+  <p className="text-gray-700 leading-relaxed mb-6">
+    捻挫・打撲・肉離れなど、ケガをした直後は、
+    患部を守りながら腫れや痛みを強くしないことが大切です。
+  </p>
+
+  <div className="space-y-4">
+
+    <div className="bg-green-100 rounded-2xl p-4">
+      <h3 className="font-bold text-green-800">
+        P = Protect（保護）
+      </h3>
+      <p className="mt-2 text-gray-700">
+        患部をサポーターやテーピングなどで守り、
+        これ以上悪化しないようにします。
+      </p>
+    </div>
+
+    <div className="bg-blue-100 rounded-2xl p-4">
+      <h3 className="font-bold text-blue-800">
+        OL = Optimal Loading（最適な負荷）
+      </h3>
+      <p className="mt-2 text-gray-700">
+        痛みのない範囲で、早期から適切に動かし、
+        少しずつ負荷をかけていきます。
+      </p>
+    </div>
+
+    <div className="bg-cyan-100 rounded-2xl p-4">
+      <h3 className="font-bold text-cyan-800">
+        I = Ice（冷却）
+      </h3>
+      <p className="mt-2 text-gray-700">
+        腫れや痛みを抑えるために冷やします。
+        冷やしすぎには注意しましょう。
+      </p>
+    </div>
+
+    <div className="bg-yellow-100 rounded-2xl p-4">
+      <h3 className="font-bold text-yellow-800">
+        C = Compression（圧迫）
+      </h3>
+      <p className="mt-2 text-gray-700">
+        包帯などで圧迫し、内出血や腫れを防ぎます。
+        ただし、しびれや色の変化が出るほど強く圧迫しないことが大切です。
+      </p>
+    </div>
+
+    <div className="bg-purple-100 rounded-2xl p-4">
+      <h3 className="font-bold text-purple-800">
+        E = Elevation（挙上）
+      </h3>
+      <p className="mt-2 text-gray-700">
+        患部を心臓より高い位置に保ち、
+        腫れを抑えやすくします。
+      </p>
+    </div>
+
+  </div>
+
+  <div className="bg-green-200 rounded-2xl p-5 mt-6">
+    <h3 className="font-bold text-green-900">
+      🦴 ボンちゃんポイント
+    </h3>
+    <p className="mt-2 text-green-900 leading-relaxed">
+      ケガをした直後は、無理に動かしすぎず、
+      でも完全に動かさないだけでもなく、
+      「守りながら少しずつ」が大切だよ♪
+    </p>
+  </div>
+
+</section>
     <div className="bg-white rounded-3xl shadow-lg p-6 mb-8">
 
       <h2 className="text-2xl font-bold text-green-800 mb-4">
