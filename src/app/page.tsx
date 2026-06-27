@@ -60,7 +60,7 @@ return ( <main className="min-h-dvh bg-gradient-to-b from-green-100 via-green-50
         <div className="bg-green-100 rounded-3xl p-6 text-center">
 
           <img
-            src="/bone01.png"
+            src="/bone3d01.png"
             alt="ボンちゃん"
             className="mx-auto w-40"
           />
