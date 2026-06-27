@@ -35,7 +35,7 @@ return ( <main className="min-h-dvh bg-gradient-to-b from-green-100 via-green-50
         <div className="text-center">
 
           <img
-            src="/honeppi.png"
+            src="/honeppi3d02.png"
             alt="ほねっぴ"
             className="mx-auto w-40"
           />
