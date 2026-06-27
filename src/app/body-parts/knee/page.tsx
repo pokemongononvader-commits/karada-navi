@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { bodyPartLinks } from "@/data/bodyPartNavigation";
 import KneeStructureGuide from "@/components/KneeStructureGuide";
-
+import KneeAnimation from "@/components/KneeAnimation";
 export default function KneePage() {
   return (
     <main className="min-h-screen bg-green-50">
@@ -31,6 +31,7 @@ export default function KneePage() {
           />
 
           <KneeStructureGuide />
+          <KneeAnimation />
 
           <section className="bg-green-50 rounded-3xl p-6 mt-8">
             <h2 className="text-2xl font-bold text-green-700">

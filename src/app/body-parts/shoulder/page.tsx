@@ -4,6 +4,10 @@ import Image from "next/image";
 import { bodyPartLinks } from "@/data/bodyPartNavigation";
 import ShoulderStructureGuide from "@/components/ShoulderStructureGuide";
 
+import ShoulderFlexionExtensionAnimation from "@/components/ShoulderFlexionExtensionAnimation";
+import ShoulderAbductionAdductionAnimation from "@/components/ShoulderAbductionAdductionAnimation";
+import ShoulderHorizontalFlexionExtensionAnimation from "@/components/ShoulderHorizontalFlexionExtensionAnimation";
+
 export default function ShoulderPage() {
   return (
     <main className="min-h-screen bg-green-50">
@@ -31,6 +35,35 @@ export default function ShoulderPage() {
           />
 
           <ShoulderStructureGuide />
+
+        
+
+          <ShoulderFlexionExtensionAnimation />
+
+          <ShoulderAbductionAdductionAnimation />
+
+          <ShoulderHorizontalFlexionExtensionAnimation />
+
+          {/* 内旋・外旋（制作中） */}
+
+<section className="mt-8 rounded-3xl border-2 border-dashed border-purple-300 bg-purple-50 p-10 text-center shadow-sm">
+  <div className="text-6xl mb-4">🦴</div>
+
+  <h2 className="text-3xl font-bold text-purple-700 mb-4">
+    ほねっぴからのお知らせ
+  </h2>
+
+  <p className="text-lg leading-8 text-gray-700">
+    肩関節の「内旋・外旋」はとても難しい動きです。
+    <br />
+    患者さんにもっと分かりやすくお伝えできるよう、
+    <br />
+    現在制作中です。
+    <br />
+    <br />
+    完成まで、もう少しお待ちください♪
+  </p>
+</section>
 
           <section className="bg-green-50 rounded-3xl p-6 mt-8">
             <h2 className="text-2xl font-bold text-green-700">
