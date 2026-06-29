@@ -1,5 +1,6 @@
 import ClinicCTA from "@/components/ClinicCTA";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
 return ( <main className="min-h-dvh bg-gradient-to-b from-green-100 via-green-50 to-white pb-12">
@@ -218,9 +219,18 @@ return ( <main className="min-h-dvh bg-gradient-to-b from-green-100 via-green-50
 
       <div className="bg-white rounded-3xl shadow-lg p-6">
 
-        <h3 className="text-2xl font-bold text-green-800">
-          💚 ほねっぴ
-        </h3>
+        <div className="flex items-center gap-3">
+  <Image
+    src="/images/icons/honeppi-icon.png"
+    alt="ほねっぴ"
+    width={40}
+    height={40}
+  />
+
+  <h3 className="text-2xl font-bold text-green-800">
+    ほねっぴ
+  </h3>
+</div>
 
         <p className="mt-4 text-gray-700 leading-relaxed">
           一心たけうち接骨院のマスコット。
@@ -232,9 +242,18 @@ return ( <main className="min-h-dvh bg-gradient-to-b from-green-100 via-green-50
 
       <div className="bg-white rounded-3xl shadow-lg p-6">
 
-        <h3 className="text-2xl font-bold text-green-800">
-          🦴 ボンちゃん
-        </h3>
+        <div className="flex items-center gap-3">
+  <Image
+    src="/images/icons/bonchan-icon.png"
+    alt="ボンちゃん"
+    width={40}
+    height={40}
+  />
+
+  <h3 className="text-2xl font-bold text-green-800">
+    ボンちゃん
+  </h3>
+</div>
 
         <p className="mt-4 text-gray-700 leading-relaxed">
           からだナビの案内係。
