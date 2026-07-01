@@ -1,6 +1,7 @@
 import ClinicCTA from "@/components/ClinicCTA";
 import Link from "next/link";
 import Image from "next/image";
+import Icon from "@/components/Icon";
 
 export default function Home() {
 return ( <main className="min-h-dvh bg-gradient-to-b from-green-100 via-green-50 to-white pb-12">
@@ -103,9 +104,12 @@ return ( <main className="min-h-dvh bg-gradient-to-b from-green-100 via-green-50
           href="/motions"
           className="bg-white rounded-3xl shadow-lg p-8 hover:bg-green-100 hover:scale-105 transition"
         >
-          <div className="text-5xl text-center">
-            🚶
-          </div>
+          <Icon
+  src="/images/icons/motions-icon.png"
+  alt="動き"
+  size={60}
+/>
+
 
           <h3 className="text-2xl font-bold text-center mt-4 text-green-800">
             動きから探す
@@ -120,9 +124,12 @@ return ( <main className="min-h-dvh bg-gradient-to-b from-green-100 via-green-50
           href="/body-parts"
           className="bg-white rounded-3xl shadow-lg p-8 hover:bg-green-100 hover:scale-105 transition"
         >
-          <div className="text-5xl text-center">
-            🦴
-          </div>
+          <Icon
+  src="/images/icons/bodyparts-icon.png"
+  alt="部位"
+  size={60}
+/>
+
 
           <h3 className="text-2xl font-bold text-center mt-4 text-green-800">
             部位から探す
@@ -137,9 +144,11 @@ return ( <main className="min-h-dvh bg-gradient-to-b from-green-100 via-green-50
           href="/symptoms"
           className="bg-white rounded-3xl shadow-lg p-8 hover:bg-green-100 hover:scale-105 transition"
         >
-          <div className="text-5xl text-center">
-            😣
-          </div>
+          <Icon
+  src="/images/icons/symptoms-icon.png"
+  alt="症状"
+  size={60}
+/>
 
           <h3 className="text-2xl font-bold text-center mt-4 text-green-800">
             症状から探す
@@ -154,9 +163,12 @@ return ( <main className="min-h-dvh bg-gradient-to-b from-green-100 via-green-50
           href="/faq"
           className="bg-white rounded-3xl shadow-lg p-8 hover:bg-green-100 hover:scale-105 transition"
         >
-          <div className="text-5xl text-center">
-            ❓
-          </div>
+          <Icon
+  src="/images/icons/faq-icon.png"
+  alt="faq"
+  size={60}
+/>
+
 
           <h3 className="text-2xl font-bold text-center mt-4 text-green-800">
             FAQ
@@ -220,11 +232,10 @@ return ( <main className="min-h-dvh bg-gradient-to-b from-green-100 via-green-50
       <div className="bg-white rounded-3xl shadow-lg p-6">
 
         <div className="flex items-center gap-3">
-  <Image
-    src="/images/icons/honeppi-icon.png"
-    alt="ほねっぴ"
-    width={40}
-    height={40}
+  <Icon
+  src="/images/icons/honeppi-icon.png"
+  alt="ほねっぴ"
+  size={70}
   />
 
   <h3 className="text-2xl font-bold text-green-800">
@@ -243,11 +254,10 @@ return ( <main className="min-h-dvh bg-gradient-to-b from-green-100 via-green-50
       <div className="bg-white rounded-3xl shadow-lg p-6">
 
         <div className="flex items-center gap-3">
-  <Image
-    src="/images/icons/bonchan-icon.png"
-    alt="ボンちゃん"
-    width={40}
-    height={40}
+  <Icon
+  src="/images/icons/bonchan-icon.png"
+  alt="ボンちゃん"
+  size={70}
   />
 
   <h3 className="text-2xl font-bold text-green-800">

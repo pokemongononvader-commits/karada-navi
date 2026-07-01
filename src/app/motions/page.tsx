@@ -1,6 +1,6 @@
 import ClinicCTA from "@/components/ClinicCTA";
 import Link from "next/link";
-
+import Icon from "@/components/Icon";
 const motions = [
 {
 id: "walk",
@@ -44,53 +44,78 @@ export default function MotionsPage() {
 return ( <main className="min-h-screen bg-green-50">
 
 
-  <div className="max-w-6xl mx-auto p-6">
+ <div className="max-w-6xl mx-auto p-6">
 
-    <Link
-      href="/"
-      className="text-green-700 hover:underline"
-    >
-      ← トップページへ戻る
-    </Link>
+  {/* 戻るボタン */}
+  <Link
+    href="/"
+    className="inline-block text-green-700 hover:underline mb-8"
+  >
+    ← トップページへ戻る
+  </Link>
 
-    <h1 className="text-4xl font-bold text-center text-green-800 mt-4">
-      🚶 動きから探す
-    </h1>
+  {/* タイトル */}
+ <div className="flex flex-col items-center mb-6">
 
-    <p className="text-center text-gray-600 mt-4">
-      気になる動きを選んで、
-      関係する関節・筋肉・症状を調べてみましょう。
-    </p>
+  <Icon
+    src="/images/icons/motions-icon.png"
+    alt="動き"
+    size={120}
+  />
+
+  <h1 className="text-4xl font-bold text-green-700 mt-3">
+    動きから探す
+  </h1>
+
+  <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
+    気になる動きを選んで、
+    関係する関節・筋肉・症状を調べてみましょう。
+  </p>
+
+</div>
 
     <div className="grid md:grid-cols-3 gap-6 mt-10">
 
       {motions.map((motion) => (
 
-        <Link
-          key={motion.id}
-          href={`/motions/${motion.id}`}
-          className="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-2xl hover:scale-105 transition"
-        >
+       <Link
+  key={motion.id}
+  href={`/motions/${motion.id}`}
+>
 
-          <img
-            src={motion.image}
-            alt={motion.name}
-            className="w-full h-52 object-cover"
-          />
+  <div className="
+bg-white
+rounded-3xl
+shadow-lg
+overflow-hidden
+transition-all
+duration-300
+hover:scale-[1.03]
+hover:shadow-2xl
+cursor-pointer
+">
 
-          <div className="p-5">
+    <img
+      src={motion.image}
+      alt={motion.name}
+      className="w-full h-52 object-cover"
+    />
 
-            <h2 className="text-2xl font-bold text-green-800">
-              {motion.icon} {motion.name}
-            </h2>
+    <div className="p-5">
 
-            <p className="text-gray-600 mt-2">
-              詳しく見る →
-            </p>
+      <h2 className="text-2xl font-bold text-green-800">
+        {motion.icon} {motion.name}
+      </h2>
 
-          </div>
+      <p className="text-gray-600 mt-2">
+        詳しく見る →
+      </p>
 
-        </Link>
+    </div>
+
+  </div>
+
+</Link>
 
       ))}
 
@@ -98,10 +123,14 @@ return ( <main className="min-h-screen bg-green-50">
 
     <section className="bg-green-200 rounded-3xl p-6 mt-10">
 
-      <h2 className="text-2xl font-bold text-green-900">
-        🦴 ほねっぴからひとこと
-      </h2>
-
+       <Icon
+    src="/images/icons/honeppi-icon.png"
+    alt="ほねっぴ"
+    size={55}
+  />
+  <h2 className="text-4xl font-bold text-green-700 mt-3">
+    動きから探す
+  </h2>
       <p className="mt-4 text-green-900 leading-relaxed">
         痛い場所だけを見るのではなく、
         「どんな動きで痛いのか」を考えることが大切です。
