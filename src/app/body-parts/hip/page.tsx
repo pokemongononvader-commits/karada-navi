@@ -33,8 +33,16 @@ export default function HipPage() {
 
           <HipStructureGuide />
 
-<HipMotionAnimation />
+<div className="grid md:grid-cols-2 gap-6">
 
+<HipMotionAnimation motion="flexion" />
+<HipMotionAnimation motion="extension" />
+<HipMotionAnimation motion="abduction" />
+<HipMotionAnimation motion="adduction" />
+<HipMotionAnimation motion="external-rotation" />
+<HipMotionAnimation motion="internal-rotation" />
+
+</div>
 
     <section className="bg-green-50 rounded-3xl p-6 mt-8">
             <h2 className="text-2xl font-bold text-green-700">
