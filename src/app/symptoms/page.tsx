@@ -1,5 +1,6 @@
 import ClinicCTA from "@/components/ClinicCTA";
 import Link from "next/link";
+import Icon from "@/components/Icon";
 
 const symptoms = [
 {
@@ -64,11 +65,23 @@ return ( <main className="min-h-dvh bg-green-50 pb-12">
       ← トップページへ戻る
     </Link>
 
+{/* タイトル */}
+    <div className="flex flex-col items-center mb-6">
+   
+     <Icon
+       src="/images/icons/symptoms-icon.png"
+       alt="症状"
+       size={120}
+     />
+   
+     <h1 className="text-4xl font-bold text-green-700 mt-3">
+       症状から探す
+     </h1>
+
+     </div>
     <header className="text-center mt-6">
 
-      <h1 className="text-4xl font-bold text-green-800">
-        😣 症状から探す
-      </h1>
+     
 
       <p className="mt-4 text-gray-700">
         気になる症状を選んで、関連する部位・動き・FAQを見てみましょう。
@@ -78,10 +91,19 @@ return ( <main className="min-h-dvh bg-green-50 pb-12">
 
     <section className="bg-white rounded-3xl shadow-lg p-6 mt-8">
 
-      <h2 className="text-2xl font-bold text-green-800">
-        🦴 ボンちゃんからひとこと
-      </h2>
-
+      <Icon
+      
+               src="/images/icons/honeppi-icon.png"
+      
+               alt="ほねっぴ"
+      
+               size={55}
+      
+             />
+      
+             <h6 className="text-4xl font-bold text-green-700 mt-3">
+      
+               ほねっぴポイント </h6>
       <p className="mt-4 text-gray-700 leading-relaxed">
         痛みは、痛い場所だけが原因とは限らないよ。
         気になる症状を選ぶと、関係しやすい部位や動き、

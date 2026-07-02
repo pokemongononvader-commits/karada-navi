@@ -2,6 +2,7 @@
 import ClinicCTA from "@/components/ClinicCTA";
 import Link from "next/link";
 import { useState } from "react";
+import Icon from "@/components/Icon";
 
 const faqCategories = [
 {
@@ -128,9 +129,19 @@ return ( <main className="min-h-screen bg-green-50">
 
     <div className="bg-green-200 rounded-3xl p-6 mt-10 shadow">
 
-      <h3 className="text-2xl font-bold text-green-900 mb-3">
-        🦴 ボンちゃんからひとこと
-      </h3>
+      <Icon
+      
+               src="/images/icons/honeppi-icon.png"
+      
+               alt="ほねっぴ"
+      
+               size={55}
+      
+             />
+      
+             <h6 className="text-4xl font-bold text-green-700 mt-3">
+      
+               ほねっぴポイント </h6>
 
       <p className="text-green-900 leading-relaxed">
         「腰が痛い」「膝が痛い」だけじゃなく、

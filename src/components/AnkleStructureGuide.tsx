@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Icon from "@/components/Icon";
 
 export default function AnkleStructureGuide() {
   return (
@@ -6,11 +7,15 @@ export default function AnkleStructureGuide() {
 
       <div className="flex flex-col md:flex-row items-center justify-between gap-6 mb-6">
         <div className="flex items-center gap-4">
-          <img
-            src="/honeppi.png"
-            alt="ほねっぴ"
-            className="w-24 h-auto"
-          />
+          <Icon
+          
+                   src="/images/icons/honeppi02-icon.png"
+          
+                   alt="ほねっぴ"
+          
+                   size={60}
+          
+                 />
 
           <div>
             <h2 className="text-3xl font-bold text-green-800">
@@ -25,12 +30,16 @@ export default function AnkleStructureGuide() {
         </div>
 
         <div className="bg-green-100 rounded-3xl p-4 flex items-center gap-4">
-          <img
-            src="/bone01.png"
-            alt="ボンちゃん"
-            className="w-24 h-auto"
-          />
-
+           <Icon
+          
+                   src="/images/icons/bonchan02-icon.png"
+          
+                   alt="ボンちゃん"
+          
+                    size={60}    
+                   
+          
+                 />
           <p className="text-green-900 leading-relaxed">
             足首は体重を支える大切な場所だよ。
             図でしくみを見てみよう♪
@@ -202,16 +211,22 @@ export default function AnkleStructureGuide() {
       </div>
 
       <div className="bg-green-100 rounded-3xl p-5 mt-6 flex flex-col md:flex-row items-center gap-4">
-        <img
-          src="/bone01.png"
-          alt="ボンちゃん"
-          className="w-28 h-auto"
-        />
+        
 
         <div>
-          <h3 className="text-xl font-bold text-green-900">
-            🦴 ボンちゃんポイント
-          </h3>
+          <Icon
+          
+                   src="/images/icons/honeppi-icon.png"
+          
+                   alt="ほねっぴ"
+          
+                   size={55}
+          
+                 />
+          
+                 <h6 className="text-4xl font-bold text-green-700 mt-3">
+          
+                   ほねっぴポイント </h6>
 
           <p className="mt-2 text-green-900 leading-relaxed">
             足首は、足裏の着き方やつま先の向きで負担が変わるよ。

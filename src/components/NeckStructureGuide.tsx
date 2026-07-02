@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Icon from "@/components/Icon";
 
 export default function NeckStructureGuide() {
   return (
@@ -6,12 +7,15 @@ export default function NeckStructureGuide() {
 
       <div className="flex flex-col md:flex-row items-center justify-between gap-6 mb-6">
         <div className="flex items-center gap-4">
-          <img
-            src="/honeppi.png"
-            alt="ほねっぴ"
-            className="w-24 h-auto"
-          />
+         <Icon
 
+         src="/images/icons/honeppi02-icon.png"
+
+         alt="ほねっぴ"
+
+         size={60}
+
+       />
           <div>
             <h2 className="text-3xl font-bold text-green-800">
               首のしくみと痛みの原因・対処法
@@ -25,11 +29,16 @@ export default function NeckStructureGuide() {
         </div>
 
         <div className="bg-green-100 rounded-3xl p-4 flex items-center gap-4">
-          <img
-            src="/bone01.png"
-            alt="ボンちゃん"
-            className="w-24 h-auto"
-          />
+          <Icon
+
+         src="/images/icons/bonchan02-icon.png"
+
+         alt="ボンちゃん"
+
+          size={60}    
+         
+
+       />
 
           <p className="text-green-900 leading-relaxed">
             動かしすぎも、動かさなすぎも注意だよ。
@@ -170,16 +179,22 @@ export default function NeckStructureGuide() {
       </div>
 
       <div className="bg-green-100 rounded-3xl p-5 mt-6 flex flex-col md:flex-row items-center gap-4">
-        <img
-          src="/bone01.png"
-          alt="ボンちゃん"
-          className="w-28 h-auto"
-        />
+        
 
         <div>
-          <h3 className="text-xl font-bold text-green-900">
-            🦴 ボンちゃんポイント
-          </h3>
+          <Icon
+
+         src="/images/icons/honeppi-icon.png"
+
+         alt="ほねっぴ"
+
+         size={55}
+
+       />
+
+       <h6 className="text-4xl font-bold text-green-700 mt-3">
+
+         ほねっぴポイント </h6>
 
           <p className="mt-2 text-green-900 leading-relaxed">
             首は、じっとしすぎても緊張が抜けにくいよ。

@@ -1,5 +1,6 @@
 import ClinicCTA from "@/components/ClinicCTA";
 import Link from "next/link";
+import Icon from "@/components/Icon";
 
 const bodyParts = [
 {
@@ -53,14 +54,24 @@ return ( <main className="min-h-dvh bg-green-50 pb-12">
       ← トップページへ戻る
     </Link>
 
-    <h1 className="text-4xl font-bold text-center text-green-800 mt-4">
-      🦴 部位から探す
-    </h1>
+   {/* タイトル */}
+    <div className="flex flex-col items-center mb-6">
+   
+     <Icon
+       src="/images/icons/bodyparts-icon.png"
+       alt="部位"
+       size={120}
+     />
+   
+     <h1 className="text-4xl font-bold text-green-700 mt-3">
+       部位から探す
+     </h1>
 
     <p className="text-center text-gray-600 mt-4">
       気になる部位を選んで、
       骨・筋肉・関節について学んでみましょう。
     </p>
+    </div>
 
     <div className="grid md:grid-cols-3 gap-6 mt-10">
 
@@ -96,9 +107,19 @@ return ( <main className="min-h-dvh bg-green-50 pb-12">
 
     <section className="bg-green-200 rounded-3xl p-6 mt-10 shadow">
 
-      <h2 className="text-2xl font-bold text-green-900">
-        🦴 ほねっぴからひとこと
-      </h2>
+      <Icon
+
+         src="/images/icons/honeppi-icon.png"
+
+         alt="ほねっぴ"
+
+         size={55}
+
+       />
+
+       <h6 className="text-4xl font-bold text-green-700 mt-3">
+
+         ほねっぴポイント </h6>
 
       <p className="mt-4 text-green-900 leading-relaxed">
         身体は骨・筋肉・関節が協力して動いています。

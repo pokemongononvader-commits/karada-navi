@@ -1,6 +1,7 @@
 import ClinicCTA from "@/components/ClinicCTA";
 import Link from "next/link";
 import { symptomLinks } from "@/data/symptomNavigation";
+import Icon from "@/components/Icon";
 
 export default function LowbackPainPage() {
 return ( <main className="min-h-screen bg-green-50">
@@ -183,10 +184,20 @@ return ( <main className="min-h-screen bg-green-50">
 
     <section className="bg-green-200 rounded-3xl p-6 mt-8">
 
-      <h2 className="text-2xl font-bold text-green-900">
-        🦴 ボンちゃんポイント
-      </h2>
-
+      <Icon
+            
+                     src="/images/icons/honeppi-icon.png"
+            
+                     alt="ほねっぴ"
+            
+                     size={55}
+            
+                   />
+            
+                   <h6 className="text-4xl font-bold text-green-700 mt-3">
+            
+                     ほねっぴポイント </h6>
+                     
       <p className="mt-4 text-green-900 leading-relaxed">
         腰が痛い時でも、
         股関節や歩き方が関係していることがあるよ。

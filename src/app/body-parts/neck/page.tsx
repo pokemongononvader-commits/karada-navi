@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { bodyPartLinks } from "@/data/bodyPartNavigation";
 import NeckStructureGuide from "@/components/NeckStructureGuide";
+import Icon from "@/components/Icon";
 
 export default function NeckPage() {
   return (
@@ -134,9 +135,19 @@ export default function NeckPage() {
           </section>
 
           <section className="bg-green-100 rounded-3xl p-6 mt-8">
-            <h2 className="text-2xl font-bold text-green-800">
-              🦴 ボンちゃんポイント
-            </h2>
+            <Icon
+
+         src="/images/icons/honeppi-icon.png"
+
+         alt="ほねっぴ"
+
+         size={55}
+
+       />
+
+       <h6 className="text-4xl font-bold text-green-700 mt-3">
+
+         ほねっぴポイント </h6>
 
             <p className="mt-4 text-green-900 leading-relaxed">
               首の痛みは、首だけが原因とは限りません。

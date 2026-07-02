@@ -1,5 +1,6 @@
 import ClinicCTA from "@/components/ClinicCTA";
 import Link from "next/link";
+import Icon from "@/components/Icon";
 
 export default function RaiseArmPage() {
 return ( <main className="min-h-screen bg-green-50">
@@ -163,9 +164,19 @@ return ( <main className="min-h-screen bg-green-50">
     {/* ほねっぴ */}
     <section className="bg-green-200 rounded-3xl p-6 mt-8">
 
-      <h2 className="text-2xl font-bold text-green-900">
-        🦴 ほねっぴポイント
-      </h2>
+      <Icon
+
+         src="/images/icons/honeppi-icon.png"
+
+         alt="ほねっぴ"
+
+         size={55}
+
+       />
+
+       <h6 className="text-4xl font-bold text-green-700 mt-3">
+
+         ほねっぴポイント </h6>
 
       <p className="mt-4 text-green-900 leading-relaxed">
         腕を上げる時は肩関節だけでなく、

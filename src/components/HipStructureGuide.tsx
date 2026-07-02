@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Icon from "@/components/Icon";
 
 export default function HipStructureGuide() {
   return (
@@ -6,12 +7,15 @@ export default function HipStructureGuide() {
 
       <div className="flex flex-col md:flex-row items-center justify-between gap-6 mb-6">
         <div className="flex items-center gap-4">
-          <img
-            src="/honeppi.png"
-            alt="ほねっぴ"
-            className="w-24 h-auto"
-          />
-
+          <Icon
+          
+                   src="/images/icons/honeppi02-icon.png"
+          
+                   alt="ほねっぴ"
+          
+                   size={60}
+          
+                 />
           <div>
             <h2 className="text-3xl font-bold text-green-800">
               股関節のしくみと痛みの原因・対処法
@@ -25,11 +29,16 @@ export default function HipStructureGuide() {
         </div>
 
         <div className="bg-green-100 rounded-3xl p-4 flex items-center gap-4">
-          <img
-            src="/bone01.png"
-            alt="ボンちゃん"
-            className="w-24 h-auto"
-          />
+           <Icon
+          
+                   src="/images/icons/bonchan02-icon.png"
+          
+                   alt="ボンちゃん"
+          
+                    size={60}    
+                   
+          
+                 />
 
           <p className="text-green-900 leading-relaxed">
             股関節は腰や膝ともつながっているよ。
@@ -214,16 +223,22 @@ export default function HipStructureGuide() {
       </div>
 
       <div className="bg-green-100 rounded-3xl p-5 mt-6 flex flex-col md:flex-row items-center gap-4">
-        <img
-          src="/bone01.png"
-          alt="ボンちゃん"
-          className="w-28 h-auto"
-        />
+        
 
         <div>
-          <h3 className="text-xl font-bold text-green-900">
-            🦴 ボンちゃんポイント
-          </h3>
+          <Icon
+         
+                  src="/images/icons/honeppi-icon.png"
+         
+                  alt="ほねっぴ"
+         
+                  size={55}
+         
+                />
+         
+                <h6 className="text-4xl font-bold text-green-700 mt-3">
+         
+                  ほねっぴポイント </h6>
 
           <p className="mt-2 text-green-900 leading-relaxed">
             歩く時は、つま先の向き・足裏の着き方・目線が大切だよ。

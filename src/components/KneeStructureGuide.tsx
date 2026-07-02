@@ -1,15 +1,24 @@
+import Icon from "@/components/Icon";
+
 export default function KneeStructureGuide() {
+
+
   return (
     <section className="bg-white rounded-3xl shadow-lg p-6 mt-8">
 
       <div className="flex flex-col md:flex-row items-center justify-between gap-6 mb-6">
 
         <div className="flex items-center gap-4">
-          <img
-            src="/honeppi.png"
-            alt="ほねっぴ"
-            className="w-24 h-auto"
-          />
+        <Icon
+        
+                 src="/images/icons/honeppi02-icon.png"
+        
+                 alt="ほねっぴ"
+        
+                 size={60}
+        
+               />  
+        
 
           <div>
             <h2 className="text-3xl font-bold text-green-800">
@@ -24,11 +33,16 @@ export default function KneeStructureGuide() {
         </div>
 
         <div className="bg-green-100 rounded-3xl p-4 flex items-center gap-4">
-          <img
-            src="/bone01.png"
-            alt="ボンちゃん"
-            className="w-24 h-auto"
-          />
+          <Icon
+          
+                   src="/images/icons/bonchan02-icon.png"
+          
+                   alt="ボンちゃん"
+          
+                    size={60}    
+                   
+          
+                 />
 
           <p className="text-green-900 leading-relaxed">
             図を見ると、膝がチームで動いていることが
@@ -50,16 +64,22 @@ export default function KneeStructureGuide() {
 
       <div className="bg-green-100 rounded-3xl p-5 mt-6 flex flex-col md:flex-row items-center gap-4">
 
-        <img
-          src="/bone01.png"
-          alt="ボンちゃん"
-          className="w-28 h-auto"
-        />
+        <Icon
+        
+                 src="/images/icons/honeppi-icon.png"
+        
+                 alt="ほねっぴ"
+        
+                 size={55}
+        
+               />
+        
+               <h6 className="text-4xl font-bold text-green-700 mt-3">
+        
+                 ほねっぴポイント </h6>
 
         <div>
-          <h3 className="text-xl font-bold text-green-900">
-            🦴 ボンちゃんポイント
-          </h3>
+          
 
           <p className="mt-2 text-green-900 leading-relaxed">
             膝は、骨・筋肉・関節包・関節液が協力して動いているよ。
